@@ -1,12 +1,6 @@
 import React from "react";
-import ToDocards from "../components/Calendarpage/ToDocards";
+import Kanban from "../components/Calendarpage/Kanban";
 
 export default function Calendar() {
-  return <div><ToDocards /></div>;
+  return <Kanban />
 }
-
-
-
-
-
-
