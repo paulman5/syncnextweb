@@ -1,0 +1,26 @@
+.mainboard {
+    width: 50rem;
+    height:23rem;
+    background-color: #FFFFFF;
+    border-radius: 0.375rem;
+}
+.mainboard_upper {
+    display: flex;
+    height:15%;
+    width:100%;
+}
+.mainboard_middle {
+    display: flex;
+    align-items: center;
+    height:5%;
+    width: 100%;
+    margin-top: 1.2rem ;
+}
+.mainboard_middleleft {
+    display: flex;
+    width: 40%;
+}
+.mainboard_middleright {
+    display: flex;
+    width:60%;
+}

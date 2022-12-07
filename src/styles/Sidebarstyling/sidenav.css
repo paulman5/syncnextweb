@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f6f7fb;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #4ec843;
+  --color-hover: #20d62c;
+}
+
+.nav-container {
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: #17171e;
+  width: 10rem;
+  height: 100%;
+}
+
+.short {
+  background-color: #17171e;
+  width: 4rem;
+  height: 100%;
+}
+.expandeffect {
+  transition: 300ms;
+}
+.tooltip {
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #17171e;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 0.5rem;
+  left: 4rem;
+  top: 1rem;
+  border-radius: 0.25rem;
+  overflow:visible;
+  z-index: 1;
+}
+
+.sidebartop {
+  position: relative;
+  height: 2rem;
+}
+.menuexpand {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.2rem;
+  margin: auto;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  fill: grey;
+}
+.menuexpand:hover {
+  fill: white;
+  transition: 500ms ease-in-out;
+}
+.separator {
+  margin-bottom:2rem;
+}
+.sidebarmiddle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  scrollbar-width: thin;
+}
+.sidebarmiddle::webkit-scrollbar {
+  width:8px;
+}
+
+.sidebarmiddle .row {
+  display: flex;
+  position: relative;
+  padding: 1.2rem 1rem;
+  gap: 0.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.sidebarmiddle .row:hover {
+  border-left: 4px solid white;
+  border-radius: 1px;
+  height: 5%;
+  left: 0rem;
+  color: white;
+  fill: white;
+  transition: 250ms ease-in-out;
+}
+
+.inactive-nav {
+  fill: grey;
+  color: grey;
+  text-decoration: none;
+}
+
+.active-nav {
+  fill: white;
+  color: white;
+  text-decoration: none;
+}
